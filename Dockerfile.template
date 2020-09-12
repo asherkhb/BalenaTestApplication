@@ -11,4 +11,6 @@ RUN python -m pip install -r requirements.txt
 # Enable udevd so that plugged dynamic hardware devices show up in our container.
 ENV UDEV=1
 
-CMD ["jupyter-notebook", "--ip=0.0.0.0", "--port=80", "--allow-root"]
+USER Io
+
+CMD ["jupyter-notebook", "--ip=0.0.0.0", "--port=80"]
