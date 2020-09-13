@@ -1,2 +1,2 @@
 jupyterlab
-ipyparallel
+dask_labextension
