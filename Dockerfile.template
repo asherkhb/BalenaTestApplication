@@ -1,6 +1,6 @@
 FROM balenalib/%%BALENA_MACHINE_NAME%%-python:3.7.7-build
 
-# RUN install_packages git
+RUN install_packages npm node 
 
 WORKDIR /usr/src/app
 
